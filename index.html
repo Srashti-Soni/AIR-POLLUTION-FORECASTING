@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Air Quality Analyzer</h1>
+            <p>Enter the latitude and longitude to get real-time air quality data and analysis</p>
+        </header>
+
+        <div class="input-form">
+            <div>
+                <label for="latitude">Latitude:</label>
+                <input type="text" id="latitude" placeholder="Enter latitude">
+            </div>
+
+            <div>
+                <label for="longitude">Longitude:</label>
+                <input type="text" id="longitude" placeholder="Enter longitude">
+            </div>
+
+            <button id="fetchAirQualityButton">Get Air Quality</button>
+        </div>
+
+        <div id="airQualityDisplay" class="result">
+            <!-- Air quality data will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
